@@ -1,4 +1,5 @@
 import { fib as fibJS } from "./fibJS.js";
+import { fib as fibTS } from "./fibTS.js";
 
 function runFib(fib, name) {
   let header = document.createElement("h2");
@@ -17,3 +18,4 @@ function runFib(fib, name) {
 }
 
 runFib(fibJS, "JavaScript");
+runFib(fibTS, "TypeScript");
