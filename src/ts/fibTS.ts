@@ -1,5 +1,3 @@
-type i32 = number;
-
 /** Calculates the n-th Fibonacci number. */
 export function fib(n: i32): i32 {
   let a = 0,

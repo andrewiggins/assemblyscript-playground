@@ -14,10 +14,11 @@ const config = {
   plugins: [
     nodeResolve(),
     typescript({
-      target: "es2020",
+      include: "./src/ts/**/*.ts",
+      tsconfig: "./src/ts/tsconfig.json",
     }),
     asc({
-      fileExtension: ".as",
+      include: "./src/as/**/*.ts",
     }),
     // terser(),
   ],

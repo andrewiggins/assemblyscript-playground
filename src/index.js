@@ -1,4 +1,4 @@
-import { instancePromise } from "asc:./fibAS.as";
+import { instancePromise } from "asc:./as/fibAS.ts";
 
 function runFib(fib, name) {
   let header = document.createElement("h2");
@@ -18,7 +18,7 @@ function runFib(fib, name) {
 
 const names = ["JavaScript", "TypeScript", "AssemblyScript"];
 Promise.all([
-  import("./fibJS.js"),
-  import("./fibTS.js"),
+  import("./js/fibJS.js"),
+  import("./ts/fibTS.js"),
   instancePromise.then((instance) => instance.exports),
 ]).then((modules) => modules.forEach((m, i) => runFib(m.fib, names[i])));
