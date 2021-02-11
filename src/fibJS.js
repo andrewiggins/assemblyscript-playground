@@ -1,6 +1,6 @@
 /** Calculates the n-th Fibonacci number. */
 export function fib(n) {
-  var a = 0,
+  let a = 0,
     b = 1;
   if (n > 0) {
     while (--n) {
