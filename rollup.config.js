@@ -7,7 +7,7 @@ process.env.PWD = process.cwd();
 
 /** @type {import('rollup').RollupOptions} */
 const config = {
-  input: "src/index.js",
+  input: "src/index.ts",
   output: {
     dir: "dist",
   },
