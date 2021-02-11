@@ -14,12 +14,9 @@ const config = {
   plugins: [
     nodeResolve(),
     typescript({
-      include: "./src/ts/**/*.ts",
-      tsconfig: "./src/ts/tsconfig.json",
+      tsconfig: "./src/as/tsconfig.json",
     }),
-    asc({
-      include: "./src/as/**/*.ts",
-    }),
+    asc(),
     // terser(),
   ],
 };
